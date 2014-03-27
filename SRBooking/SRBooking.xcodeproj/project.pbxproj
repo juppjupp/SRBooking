@@ -10,6 +10,10 @@
 		96ACE4DE18E486F1009BE334 /* SRBNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96ACE4DD18E486F1009BE334 /* SRBNavigationViewController.m */; };
 		96ACE4E218E48A7C009BE334 /* SRBCalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96ACE4E118E48A7C009BE334 /* SRBCalendarViewController.m */; };
 		96ACE4E818E48AC7009BE334 /* SRBContactsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96ACE4E718E48AC7009BE334 /* SRBContactsViewController.m */; };
+		96ACE4EC18E491D1009BE334 /* SRBStrings_sv.strings in Resources */ = {isa = PBXBuildFile; fileRef = 96ACE4EB18E491D1009BE334 /* SRBStrings_sv.strings */; };
+		96ACE4EE18E491E2009BE334 /* SRBStrings_en.strings in Resources */ = {isa = PBXBuildFile; fileRef = 96ACE4ED18E491E2009BE334 /* SRBStrings_en.strings */; };
+		96ACE4F218E49350009BE334 /* SRBLanguage.m in Sources */ = {isa = PBXBuildFile; fileRef = 96ACE4F118E49350009BE334 /* SRBLanguage.m */; };
+		96ACE4F518E49434009BE334 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 96ACE4F418E49434009BE334 /* Constants.m */; };
 		96B8B28918E1DBE500895FB5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96B8B28818E1DBE500895FB5 /* Foundation.framework */; };
 		96B8B28B18E1DBE500895FB5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96B8B28A18E1DBE500895FB5 /* CoreGraphics.framework */; };
 		96B8B28D18E1DBE500895FB5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96B8B28C18E1DBE500895FB5 /* UIKit.framework */; };
@@ -44,6 +48,12 @@
 		96ACE4E118E48A7C009BE334 /* SRBCalendarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRBCalendarViewController.m; sourceTree = "<group>"; };
 		96ACE4E618E48AC7009BE334 /* SRBContactsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRBContactsViewController.h; sourceTree = "<group>"; };
 		96ACE4E718E48AC7009BE334 /* SRBContactsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRBContactsViewController.m; sourceTree = "<group>"; };
+		96ACE4EB18E491D1009BE334 /* SRBStrings_sv.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = SRBStrings_sv.strings; sourceTree = "<group>"; };
+		96ACE4ED18E491E2009BE334 /* SRBStrings_en.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = SRBStrings_en.strings; sourceTree = "<group>"; };
+		96ACE4F018E49350009BE334 /* SRBLanguage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRBLanguage.h; sourceTree = "<group>"; };
+		96ACE4F118E49350009BE334 /* SRBLanguage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRBLanguage.m; sourceTree = "<group>"; };
+		96ACE4F318E49434009BE334 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		96ACE4F418E49434009BE334 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
 		96B8B28518E1DBE500895FB5 /* SRBooking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SRBooking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96B8B28818E1DBE500895FB5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		96B8B28A18E1DBE500895FB5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -110,6 +120,34 @@
 			name = Components;
 			sourceTree = "<group>";
 		};
+		96ACE4E918E4918E009BE334 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				96ACE4EA18E49198009BE334 /* Language */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		96ACE4EA18E49198009BE334 /* Language */ = {
+			isa = PBXGroup;
+			children = (
+				96ACE4EB18E491D1009BE334 /* SRBStrings_sv.strings */,
+				96ACE4ED18E491E2009BE334 /* SRBStrings_en.strings */,
+			);
+			name = Language;
+			sourceTree = "<group>";
+		};
+		96ACE4EF18E49314009BE334 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				96ACE4F018E49350009BE334 /* SRBLanguage.h */,
+				96ACE4F118E49350009BE334 /* SRBLanguage.m */,
+				96ACE4F318E49434009BE334 /* Constants.h */,
+				96ACE4F418E49434009BE334 /* Constants.m */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
 		96B8B27C18E1DBE500895FB5 = {
 			isa = PBXGroup;
 			children = (
@@ -144,6 +182,8 @@
 		96B8B29018E1DBE500895FB5 /* SRBooking */ = {
 			isa = PBXGroup;
 			children = (
+				96ACE4E918E4918E009BE334 /* Resources */,
+				96ACE4EF18E49314009BE334 /* Helpers */,
 				96ACE4DB18E48693009BE334 /* Components */,
 				96ACE4DA18E48676009BE334 /* ViewControllers */,
 				96B8B29918E1DBE500895FB5 /* AppDelegate.h */,
@@ -259,8 +299,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96ACE4EE18E491E2009BE334 /* SRBStrings_en.strings in Resources */,
 				96B8B29518E1DBE500895FB5 /* InfoPlist.strings in Resources */,
 				96B8B2A018E1DBE500895FB5 /* Images.xcassets in Resources */,
+				96ACE4EC18E491D1009BE334 /* SRBStrings_sv.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,7 +324,9 @@
 				96ACE4DE18E486F1009BE334 /* SRBNavigationViewController.m in Sources */,
 				96B8B29B18E1DBE500895FB5 /* AppDelegate.m in Sources */,
 				96ACE4E218E48A7C009BE334 /* SRBCalendarViewController.m in Sources */,
+				96ACE4F518E49434009BE334 /* Constants.m in Sources */,
 				96ACE4E818E48AC7009BE334 /* SRBContactsViewController.m in Sources */,
+				96ACE4F218E49350009BE334 /* SRBLanguage.m in Sources */,
 				96B8B29718E1DBE500895FB5 /* main.m in Sources */,
 				96B8B29E18E1DBE500895FB5 /* SRBooking.xcdatamodeld in Sources */,
 			);

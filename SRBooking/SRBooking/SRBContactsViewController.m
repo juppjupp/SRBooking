@@ -7,6 +7,7 @@
 //
 
 #import "SRBContactsViewController.h"
+#import "SRBLanguage.h"
 
 @interface SRBContactsViewController ()
 
@@ -29,6 +30,10 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.navigationItem.title = NSLocalizedStringFromTable(@"SRBContacts", [[SRBLanguage sharedInstance] getSelectedLanguage], @"");
+    
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(add_contact)];
+    [self initTableView];
 }
 
 - (void)didReceiveMemoryWarning
@@ -36,6 +41,35 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+- (void) initTableView{
+    self.contactsTableView = [UITableView new];
+    self.contactsTableView.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
+    
+    [self.view addSubview:self.contactsTableView];
+}
+
+#pragma mark - tableView
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return 0;
+}
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
+    return 0;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    static NSString *CellIdentifier = @"Cell";
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    if (!cell) {
+        cell = [UITableViewCell new];
+    }
+    
+    return  cell;
+}
+
+- (void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath{}
 
 /*
 #pragma mark - Navigation

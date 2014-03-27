@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 #import "SRBNavigationViewController.h"
-
+#import "SRBLanguage.h"
 
 @implementation AppDelegate
 
@@ -21,6 +21,7 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor whiteColor];
     // Override point for customization after application launch.
+    [SRBLanguage sharedInstance].selectedLanguage = @"sv";
     
     UITabBarController * tabBarCtrl = [UITabBarController new];
     
