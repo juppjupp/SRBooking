@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "SRBNavigationViewController.h"
+
 
 @implementation AppDelegate
 
@@ -17,11 +19,23 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    
+    self.window.backgroundColor = [UIColor whiteColor];
     // Override point for customization after application launch.
     
     UITabBarController * tabBarCtrl = [UITabBarController new];
-    self.window.backgroundColor = [UIColor whiteColor];
+    
+    self.calendarViewCtrl = [SRBCalendarViewController new];
+    self.calendarViewCtrl.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Calendar" image:nil selectedImage:nil];
+    SRBNavigationViewController * calendarNavCtrl = [[SRBNavigationViewController alloc]initWithRootViewController:self.calendarViewCtrl];
+    
+    
+    self.contactViewCtrl = [SRBContactsViewController new];
+    self.contactViewCtrl.tabBarItem = [[UITabBarItem alloc]initWithTitle:@"Contacts" image:nil selectedImage:nil];
+    SRBNavigationViewController *contactNavCtrl = [[SRBNavigationViewController alloc]initWithRootViewController:self.contactViewCtrl];
+    
+    [tabBarCtrl setViewControllers:[NSArray arrayWithObjects:calendarNavCtrl, contactNavCtrl ,nil]];
+    
+    self.window.rootViewController = tabBarCtrl;
     [self.window makeKeyAndVisible];
     return YES;
 }

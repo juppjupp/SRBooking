@@ -1,18 +1,20 @@
 //
-//  SRBMainViewController.m
+//  SRBContactsViewController.m
 //  SRBooking
 //
 //  Created by Jonas Ericsson on 27/03/14.
 //  Copyright (c) 2014 joersolution.se. All rights reserved.
 //
 
-#import "SRBMainViewController.h"
+#import "SRBContactsViewController.h"
 
-@interface SRBMainViewController ()
+@interface SRBContactsViewController ()
+
+@property (nonatomic, strong) UITableView *contactsTableView;
 
 @end
 
-@implementation SRBMainViewController
+@implementation SRBContactsViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {

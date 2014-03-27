@@ -1,5 +1,5 @@
 //
-//  SRBMainViewController.h
+//  SRBCalendarViewController.h
 //  SRBooking
 //
 //  Created by Jonas Ericsson on 27/03/14.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SRBMainViewController : UIViewController
+@interface SRBCalendarViewController : UIViewController
 
 @end
