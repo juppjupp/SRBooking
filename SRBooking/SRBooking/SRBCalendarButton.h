@@ -10,4 +10,6 @@
 
 @interface SRBCalendarButton : UIButton
 
+- (id)initWithFrame:(CGRect)frame target:(id)target action:(SEL)action;
+
 @end

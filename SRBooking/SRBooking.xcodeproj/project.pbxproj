@@ -29,6 +29,7 @@
 		96B8B2AA18E1DBE500895FB5 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96B8B28E18E1DBE500895FB5 /* CoreData.framework */; };
 		96B8B2B218E1DBE600895FB5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 96B8B2B018E1DBE600895FB5 /* InfoPlist.strings */; };
 		96B8B2B418E1DBE600895FB5 /* SRBookingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 96B8B2B318E1DBE600895FB5 /* SRBookingTests.m */; };
+		96CA8C6318E5C7500020F073 /* SRBCalendarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 96CA8C6218E5C7500020F073 /* SRBCalendarButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,8 @@
 		96B8B2AF18E1DBE600895FB5 /* SRBookingTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SRBookingTests-Info.plist"; sourceTree = "<group>"; };
 		96B8B2B118E1DBE600895FB5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		96B8B2B318E1DBE600895FB5 /* SRBookingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SRBookingTests.m; sourceTree = "<group>"; };
+		96CA8C6118E5C7500020F073 /* SRBCalendarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRBCalendarButton.h; sourceTree = "<group>"; };
+		96CA8C6218E5C7500020F073 /* SRBCalendarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRBCalendarButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +119,8 @@
 			children = (
 				96ACE4DC18E486F1009BE334 /* SRBNavigationViewController.h */,
 				96ACE4DD18E486F1009BE334 /* SRBNavigationViewController.m */,
+				96CA8C6118E5C7500020F073 /* SRBCalendarButton.h */,
+				96CA8C6218E5C7500020F073 /* SRBCalendarButton.m */,
 			);
 			name = Components;
 			sourceTree = "<group>";
@@ -271,6 +276,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = joersolution.se;
 				TargetAttributes = {
+					96B8B28418E1DBE500895FB5 = {
+						DevelopmentTeam = R5L2UA6T93;
+					};
 					96B8B2A418E1DBE500895FB5 = {
 						TestTargetID = 96B8B28418E1DBE500895FB5;
 					};
@@ -322,6 +330,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				96ACE4DE18E486F1009BE334 /* SRBNavigationViewController.m in Sources */,
+				96CA8C6318E5C7500020F073 /* SRBCalendarButton.m in Sources */,
 				96B8B29B18E1DBE500895FB5 /* AppDelegate.m in Sources */,
 				96ACE4E218E48A7C009BE334 /* SRBCalendarViewController.m in Sources */,
 				96ACE4F518E49434009BE334 /* Constants.m in Sources */,
@@ -445,6 +454,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SRBooking/SRBooking-Prefix.pch";
 				INFOPLIST_FILE = "SRBooking/SRBooking-Info.plist";
@@ -458,6 +468,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SRBooking/SRBooking-Prefix.pch";
 				INFOPLIST_FILE = "SRBooking/SRBooking-Info.plist";

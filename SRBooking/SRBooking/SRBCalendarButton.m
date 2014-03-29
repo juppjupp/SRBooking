@@ -10,11 +10,13 @@
 
 @implementation SRBCalendarButton
 
-- (id)initWithFrame:(CGRect)frame
+- (id)initWithFrame:(CGRect)frame target:(id)target action:(SEL)action
 {
     self = [super initWithFrame:frame];
     if (self) {
-        // Initialization code
+        self.backgroundColor = [UIColor redColor];
+        [self addTarget:target action:action forControlEvents:UIControlEventTouchUpInside];
+
     }
     return self;
 }
