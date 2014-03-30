@@ -14,12 +14,29 @@
 
 @implementation SRBNavigationViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+- (id)initWithRootViewController:(UIViewController *)rootViewController
 {
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
+    self = [super initWithRootViewController:rootViewController];
+    if(self) {
+        self.navigationBar.translucent = NO;
+        
+        self.navigationBar.barTintColor = [UIColor blueColor];
+        self.navigationBar.tintColor = [UIColor whiteColor];
+        
+        NSDictionary *attributes = [NSDictionary dictionaryWithObjectsAndKeys:
+                                    [UIColor whiteColor],
+                                    UITextAttributeTextColor,
+                                    [UIColor clearColor],
+                                    UITextAttributeTextShadowColor, nil
+                                    ];
+        
+        [[UIBarButtonItem appearance] setTitleTextAttributes: attributes forState:UIControlStateNormal];
+        NSDictionary *titleTextAttributes = @{UITextAttributeTextColor:[UIColor whiteColor]};
+        [[UINavigationBar appearance] setTitleTextAttributes:titleTextAttributes];
+        
+        //self.navigationBar.titleTextAttributes = [NSDictionary dictionaryWithObject:[UIColor whiteColor] forKey:UITextAttributeTextColor];
     }
+    
     return self;
 }
 

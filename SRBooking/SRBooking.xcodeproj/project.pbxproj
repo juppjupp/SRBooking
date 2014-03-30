@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		969C7DFF18E72D5A001278CF /* SRBShowDatesActivitysViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 969C7DFE18E72D5A001278CF /* SRBShowDatesActivitysViewController.m */; };
+		969C7E0518E8A6D3001278CF /* Month Calendar Date Tile Gray.png in Resources */ = {isa = PBXBuildFile; fileRef = 969C7E0118E8A6D3001278CF /* Month Calendar Date Tile Gray.png */; };
+		969C7E0618E8A6D3001278CF /* Month Calendar Date Tile.png in Resources */ = {isa = PBXBuildFile; fileRef = 969C7E0218E8A6D3001278CF /* Month Calendar Date Tile.png */; };
+		969C7E0718E8A6D3001278CF /* Month Calendar Today Selected Tile.png in Resources */ = {isa = PBXBuildFile; fileRef = 969C7E0318E8A6D3001278CF /* Month Calendar Today Selected Tile.png */; };
+		969C7E0818E8A6D3001278CF /* Month Calendar Today Tile.png in Resources */ = {isa = PBXBuildFile; fileRef = 969C7E0418E8A6D3001278CF /* Month Calendar Today Tile.png */; };
 		96ACE4DE18E486F1009BE334 /* SRBNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96ACE4DD18E486F1009BE334 /* SRBNavigationViewController.m */; };
 		96ACE4E218E48A7C009BE334 /* SRBCalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96ACE4E118E48A7C009BE334 /* SRBCalendarViewController.m */; };
 		96ACE4E818E48AC7009BE334 /* SRBContactsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96ACE4E718E48AC7009BE334 /* SRBContactsViewController.m */; };
@@ -43,6 +48,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		969C7DFD18E72D5A001278CF /* SRBShowDatesActivitysViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRBShowDatesActivitysViewController.h; sourceTree = "<group>"; };
+		969C7DFE18E72D5A001278CF /* SRBShowDatesActivitysViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRBShowDatesActivitysViewController.m; sourceTree = "<group>"; };
+		969C7E0118E8A6D3001278CF /* Month Calendar Date Tile Gray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Month Calendar Date Tile Gray.png"; sourceTree = "<group>"; };
+		969C7E0218E8A6D3001278CF /* Month Calendar Date Tile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Month Calendar Date Tile.png"; sourceTree = "<group>"; };
+		969C7E0318E8A6D3001278CF /* Month Calendar Today Selected Tile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Month Calendar Today Selected Tile.png"; sourceTree = "<group>"; };
+		969C7E0418E8A6D3001278CF /* Month Calendar Today Tile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Month Calendar Today Tile.png"; sourceTree = "<group>"; };
 		96ACE4DC18E486F1009BE334 /* SRBNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRBNavigationViewController.h; sourceTree = "<group>"; };
 		96ACE4DD18E486F1009BE334 /* SRBNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRBNavigationViewController.m; sourceTree = "<group>"; };
 		96ACE4E018E48A7C009BE334 /* SRBCalendarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRBCalendarViewController.h; sourceTree = "<group>"; };
@@ -110,6 +121,8 @@
 				96ACE4E118E48A7C009BE334 /* SRBCalendarViewController.m */,
 				96ACE4E618E48AC7009BE334 /* SRBContactsViewController.h */,
 				96ACE4E718E48AC7009BE334 /* SRBContactsViewController.m */,
+				969C7DFD18E72D5A001278CF /* SRBShowDatesActivitysViewController.h */,
+				969C7DFE18E72D5A001278CF /* SRBShowDatesActivitysViewController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -128,6 +141,10 @@
 		96ACE4E918E4918E009BE334 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				969C7E0118E8A6D3001278CF /* Month Calendar Date Tile Gray.png */,
+				969C7E0218E8A6D3001278CF /* Month Calendar Date Tile.png */,
+				969C7E0318E8A6D3001278CF /* Month Calendar Today Selected Tile.png */,
+				969C7E0418E8A6D3001278CF /* Month Calendar Today Tile.png */,
 				96ACE4EA18E49198009BE334 /* Language */,
 			);
 			name = Resources;
@@ -308,9 +325,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				96ACE4EE18E491E2009BE334 /* SRBStrings_en.strings in Resources */,
+				969C7E0518E8A6D3001278CF /* Month Calendar Date Tile Gray.png in Resources */,
+				969C7E0718E8A6D3001278CF /* Month Calendar Today Selected Tile.png in Resources */,
 				96B8B29518E1DBE500895FB5 /* InfoPlist.strings in Resources */,
 				96B8B2A018E1DBE500895FB5 /* Images.xcassets in Resources */,
 				96ACE4EC18E491D1009BE334 /* SRBStrings_sv.strings in Resources */,
+				969C7E0618E8A6D3001278CF /* Month Calendar Date Tile.png in Resources */,
+				969C7E0818E8A6D3001278CF /* Month Calendar Today Tile.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,6 +358,7 @@
 				96ACE4E818E48AC7009BE334 /* SRBContactsViewController.m in Sources */,
 				96ACE4F218E49350009BE334 /* SRBLanguage.m in Sources */,
 				96B8B29718E1DBE500895FB5 /* main.m in Sources */,
+				969C7DFF18E72D5A001278CF /* SRBShowDatesActivitysViewController.m in Sources */,
 				96B8B29E18E1DBE500895FB5 /* SRBooking.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -458,6 +480,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SRBooking/SRBooking-Prefix.pch";
 				INFOPLIST_FILE = "SRBooking/SRBooking-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -472,6 +495,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SRBooking/SRBooking-Prefix.pch";
 				INFOPLIST_FILE = "SRBooking/SRBooking-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

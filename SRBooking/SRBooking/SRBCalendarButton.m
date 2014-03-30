@@ -14,7 +14,9 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-        self.backgroundColor = [UIColor redColor];
+        UIImage *background = [UIImage imageNamed:@"Month Calendar Date Tile.png"];
+        [self setBackgroundImage:background forState:UIControlStateNormal];
+        
         [self addTarget:target action:action forControlEvents:UIControlEventTouchUpInside];
 
     }
